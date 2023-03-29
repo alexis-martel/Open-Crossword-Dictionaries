@@ -13,4 +13,4 @@ This repository contains JSON dictionaries of multiple languages for use in the 
     python3 gen_dict.py [Raw dictionary path] [Result dictionary path]
     ```
 ## About the dictionaries
-The dictionaries are simple JSON translation of GNU Aspell language dumps. See [GNU Aspell](http://aspell.net/) for more information.
+The dictionaries are simple JSON translations of GNU Aspell language dumps. See [GNU Aspell](http://aspell.net/) for more information.
