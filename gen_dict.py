@@ -15,7 +15,12 @@ WORD_LIST = []
 with open(RAW_DICT_PATH) as f:
     lines = f.readlines()
     for line in lines:
-        WORD_LIST.append(line.strip().lower().replace('\'', ''))  # Removes single quotes and whitespace
+        WORD_LIST.append(
+            line.strip().lower().replace('\'', '').replace('é', 'e').replace('è', 'e').replace('ê', 'e').replace('ë',
+                                                                                                                 'e').replace(
+                'ô', 'o').replace('â', 'a').replace('à', 'a').replace('î', 'i').replace('ï', 'i').replace('ç',
+                                                                                                          'c').replace(
+                'û', 'u').replace('-', ''))  # Removes single quotes and whitespace
 
 RESULT_DICT = {'words': sorted((set(WORD_LIST)))}  # Removes duplicates and sorts the list
 
